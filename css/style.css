@@ -28,10 +28,12 @@ img {
 }
 
 .container {
-  margin: 1em;
   border-radius: 10px;
-  overflow: auto;
+  margin: 1em;
   max-width: 375px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
@@ -86,4 +88,23 @@ img {
 
 .btn-luxury {
   color: var(--clr-cyan-very-dark);
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    flex-direction: row;
+    max-width: unset;
+  }
+
+  .card {
+    max-width: 375px;
+  }
+
+  .card-text {
+    margin-bottom: 6em;
+  }
 }
