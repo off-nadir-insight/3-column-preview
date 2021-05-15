@@ -73,6 +73,7 @@ img {
   display: inline-block;
   background-color: var(--clr-gray-light);
   padding: 1em 2em;
+  border: 3px solid var(--clr-gray-light);
   border-radius: 30px;
   text-decoration: none;
   cursor: pointer;
@@ -82,12 +83,30 @@ img {
   color: var(--clr-orange);
 }
 
+.btn-sedans:hover,
+.btn-sedans:focus {
+  color: var(--clr-gray-light);
+  background-color: var(--clr-orange);
+}
+
 .btn-suvs {
   color: var(--clr-cyan-dark);
 }
 
+.btn-suvs:hover,
+.btn-suvs:focus {
+  color: var(--clr-gray-light);
+  background-color: var(--clr-cyan-dark);
+}
+
 .btn-luxury {
   color: var(--clr-cyan-very-dark);
+}
+
+.btn-luxury:hover,
+.btn-luxury:focus {
+  color: var(--clr-gray-light);
+  background-color: var(--clr-cyan-very-dark);
 }
 
 @media screen and (min-width: 1200px) {
